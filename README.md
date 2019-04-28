@@ -21,6 +21,9 @@ The MAVLink source code is modified to include cryptographic functions resulting
 4.	Added RC4 mode in v2 with no padding 
 5.	Added ChaCha20 mode in v2 with no padding 
 6.	Added working v2.0 header files to the generator
+## Installation:
+1.Clone ArduPilot repository 
+```git clone https://github.com/aniskoubaa/mavsec```
 ## Execution:
 1. To run Ardupilot, use the command ```sim_vehicle.py -j4 --console``` 
 2. To run the udpserver.c, use the command  ```gcc -o UDPServ udpserver.c``` and ``` ./UDPServ 14550  ```
