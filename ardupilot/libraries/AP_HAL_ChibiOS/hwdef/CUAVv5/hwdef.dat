@@ -1,0 +1,8 @@
+# hw definition file for processing by chibios_hwdef.py
+# for CUAVv5 hardware.
+
+include ../fmuv5/hwdef.dat
+
+# use default IO firmware on CUAVv5
+ROMFS io_firmware.bin Tools/IO_Firmware/fmuv2_IO.bin
+

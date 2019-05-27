@@ -1,0 +1,42 @@
+set USB autoconnect
+set NSH_ERROR_UART1 /dev/ttyACM0
+set NSH_ERROR_UART2 /dev/ttyS0
+echo "[init] looking for microSD..."
+if mount -t vfat /dev/mmcsd0 /fs/microsd
+then
+    echo "[init] card mounted at /fs/microsd"
+fi
+if [ -f /etc/init.d/rc.board ]
+then
+    echo "[init] reading /etc/init.d/rc.board"
+    sh /etc/init.d/rc.board
+fi
+if [ -f /fs/microsd/etc/rc ]
+then
+    echo "[init] reading /fs/microsd/etc/rc"
+    sh /fs/microsd/etc/rc
+fi
+if [ -f /fs/microsd/etc/rc.txt ]
+then
+    echo "[init] reading /fs/microsd/etc/rc.txt"
+    sh /fs/microsd/etc/rc.txt
+fi
+if [ $USB != autoconnect ]
+then
+    echo "[init] not connecting USB"
+else
+    if sercon
+    then
+        echo "[init] USB interface connected"
+    else
+        echo "[init] No USB connected"
+    fi
+fi
+if [ -f /etc/init.d/rc.APM -a ! -f /fs/microsd/APM/nostart ]
+then
+    echo Running rc.APM
+    sh /etc/init.d/rc.APM
+else
+    echo "Opening USB nsh"
+    nshterm /dev/ttyACM0 &
+fi

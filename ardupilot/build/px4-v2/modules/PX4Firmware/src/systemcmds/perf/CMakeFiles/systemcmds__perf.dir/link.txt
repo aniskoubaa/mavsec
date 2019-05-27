@@ -1,0 +1,2 @@
+/opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-ar qc libsystemcmds__perf.a  CMakeFiles/systemcmds__perf.dir/perf.c.obj
+/opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-ranlib libsystemcmds__perf.a

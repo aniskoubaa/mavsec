@@ -1,0 +1,2 @@
+/opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-ar qc libsystemcmds__mixer.a  CMakeFiles/systemcmds__mixer.dir/mixer.cpp.obj
+/opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-ranlib libsystemcmds__mixer.a

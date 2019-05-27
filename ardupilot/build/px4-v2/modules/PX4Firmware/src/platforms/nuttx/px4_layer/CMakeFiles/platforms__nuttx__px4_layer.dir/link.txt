@@ -1,0 +1,2 @@
+/opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-ar qc libplatforms__nuttx__px4_layer.a  CMakeFiles/platforms__nuttx__px4_layer.dir/px4_nuttx_tasks.c.obj CMakeFiles/platforms__nuttx__px4_layer.dir/__/__/posix/px4_layer/px4_log.c.obj
+/opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-ranlib libplatforms__nuttx__px4_layer.a

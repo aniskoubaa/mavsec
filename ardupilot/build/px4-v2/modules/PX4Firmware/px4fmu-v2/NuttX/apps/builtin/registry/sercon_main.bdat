@@ -1,0 +1,1 @@
+{ "sercon", SCHED_PRIORITY_DEFAULT, 2048, sercon_main },

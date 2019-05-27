@@ -1,0 +1,1 @@
+int sercon_main(int argc, char *argv[]);

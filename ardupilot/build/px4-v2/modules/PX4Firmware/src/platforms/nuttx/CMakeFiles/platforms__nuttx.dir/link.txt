@@ -1,0 +1,2 @@
+/opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-ar qc libplatforms__nuttx.a  CMakeFiles/platforms__nuttx.dir/px4_nuttx_impl.cpp.obj
+/opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-ranlib libplatforms__nuttx.a

@@ -1,0 +1,2 @@
+/opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-ar qc libdrivers__device.a  CMakeFiles/drivers__device.dir/ringbuffer.cpp.obj CMakeFiles/drivers__device.dir/integrator.cpp.obj CMakeFiles/drivers__device.dir/device_nuttx.cpp.obj CMakeFiles/drivers__device.dir/cdev.cpp.obj CMakeFiles/drivers__device.dir/i2c_nuttx.cpp.obj CMakeFiles/drivers__device.dir/pio.cpp.obj CMakeFiles/drivers__device.dir/spi.cpp.obj
+/opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-ranlib libdrivers__device.a

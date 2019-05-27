@@ -1,0 +1,1 @@
+{ "sysinfo", SCHED_PRIORITY_DEFAULT, 768, sysinfo_main },
